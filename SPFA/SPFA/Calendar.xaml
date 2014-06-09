@@ -1,0 +1,18 @@
+﻿<Window x:Class="SPFA.Calendar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="clr-namespace:MonthCalendar;assembly=MonthCalendar"
+        Title="Calendar" Height="600" Width="800">
+    <Grid>
+        <Menu Height="30" VerticalAlignment="Top">
+            <MenuItem Header="File" Height="30" Width="40" FontSize="16">
+                <MenuItem Header="Close Calendar" Name="Exit" Click="Exit_Click"/>
+            </MenuItem>
+        </Menu>
+        <mc:MonthCalendarControl x:Name="AptCalendar" VerticalAlignment="Stretch"  VerticalContentAlignment="Stretch"
+                                    DisplayMonthChanged="DisplayMonthChanged" DayBoxDoubleClicked="DayBoxDoubleClicked_event"
+                                    AppointmentDblClicked="AppointmentDblClicked" Margin="0,27,0,-5" />
+    </Grid>
+
+</Window>
+    
